@@ -3,21 +3,17 @@ let counts = {};
 
 // Your code here
 
-// Recorrer todo el string
-for (let i = 0; i < par.length; i++) {
-    // Obtener el carácter actual en minúscula
-    let char = par[i].toLowerCase();
+// Your code here
+for(let i = 0; i < par.length; i++){
+    let letra = par[i].toLowerCase()
+
+    if(letra === " ")continue;
     
-    // Verifica que el carácter no sea un espacio y sea una letra
-    if (char !== ' ' && /[a-z]/.test(char)) {
-        if (char in counts) {
-            counts[char]++; // Incrementa el conteo si ya existe
-        } else {
-            counts[char] = 1; // Inicializa el conteo si no existe
-        }
+    if(counts[letra] === undefined){
+        counts[letra] = 1
+    }else{
+        counts[letra] += 1
     }
-    }
-
-console.log(counts); // Imprime el conteo de letras
-
+}
+console.log(counts)
 

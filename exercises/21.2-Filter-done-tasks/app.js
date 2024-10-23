@@ -1,3 +1,12 @@
+/*📝 Instrucciones:
+Usa el método filter() para imprimir en consola todas las tareas hechas (done: true) del arreglo tasks.
+💻 Resultado esperado:
+[
+  { label: 'Eat my lunch', done: true },
+  { label: 'Finish my exercises', done: true },
+  { label: 'Read a book', done: true }
+] */
+
 let tasks = [
   { label: "Eat my lunch", done: true },
   { label: "Make the bed", done: false },
@@ -10,3 +19,11 @@ let tasks = [
 ];
 
 // Your code here
+
+let newArray = tasks.filter(function(valor){
+  if(valor.done === true){
+    return valor
+  }
+});
+
+console.log(newArray);

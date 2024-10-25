@@ -7,3 +7,5 @@ function myFunction(number) {
 
 let newArray = myNumbers.map(myFunction)
 console.log(newArray);
+
+//map agarra el 1er numero y lo manda a myFunction como "number"

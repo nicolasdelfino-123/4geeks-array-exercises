@@ -1,10 +1,13 @@
-let mySampleArray = [3423,5,4,47889,654,8,867543,23,48,56432,55,23,25,12];
+let mySampleArray = [
+  3423, 5, 4, 47889, 654, 8, 867543, 23, 48, 56432, 55, 23, 25, 12,
+];
 
 let initialValue = 7;
-let stopValue = mySampleArray.length;
+let stopValue = 14;
 let increasingValue = 1;
 
-for(let i = initialValue; i < stopValue; i = i + increasingValue)
-{
-	console.log(mySampleArray[i]);
+for (let i = initialValue; i < stopValue; i = i + increasingValue) {
+  console.log(mySampleArray[i]);
 }
+
+/* Cambia el valor de esas variables para que el bucle imprima solo la última mitad del arreglo. */
